@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario di Viaggio - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 18px;
+        }
+        section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 18px;
+            text-align: justify;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Carica il tag static -->
+{% load static %}
+
+<header>
+    <h1>Benvenuti su Diario di Viaggio</h1>
+    <!-- Inserimento dell'immagine -->
+    <img src="{% static 'images/immagine sito.jpg' %}" alt="Immagine del sito" style="width:100%;max-width:600px;margin:20px 0;">
+</header>
+
+<!-- Navigazione con link alla home e destinazioni -->
+<nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'destinazioni' %}">Destinazioni</a>
+    <a href="#">Diario di Viaggio</a>
+    <a href="#">Consigli</a>
+    <a href="#">Fotografie</a>
+</nav>
+
+<section>
+    <h1>Scopri il mondo attraverso i miei occhi</h1>
+    <p>
+        Ciao, sono Cristina! Benvenuti nel mio blog "Diario di Viaggio", dove racconto le mie avventure intorno al mondo, 
+        condivido i miei consigli di viaggio e spero di ispirarvi a scoprire nuove destinazioni. 
+        Ho sempre creduto che viaggiare sia il modo migliore per crescere, imparare e conoscere nuove culture. 
+        Qui troverete racconti personali, consigli pratici e tante fotografie dei luoghi che ho visitato.
+    </p>
+    <p>
+        Che siate viaggiatori esperti o appena agli inizi, spero che le mie esperienze vi siano utili e 
+        vi ispirino a vivere nuove avventure. Preparatevi a esplorare il mondo insieme a me!
+    </p>
+</section>
+
+<footer>
+    <p>© 2024 Diario di Viaggio. Tutti i diritti riservati.</p>
+</footer>
+
+</body>
+</html>
+
+
