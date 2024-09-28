@@ -1,8 +1,7 @@
 # Miniblog
 
 ### Descrizione
-Miniblog è un semplice progetto di blog creato utilizzando Django, pensato per presentare un esempio di portfolio durante un colloquio di lavoro. Il blog include una **homepage**, una **pagina delle destinazioni** e una struttura di base per la gestione dei post. È un progetto che mette in luce competenze fondamentali di sviluppo web con Django, inclusa la gestione dei template, delle rotte, e l'integrazione di file statici (immagini).
-
+Miniblog è un semplice progetto di blog creato utilizzando Django, il blog include una **homepage**, una **pagina delle destinazioni** 
 ### Funzionalità principali
 - **Homepage**: Una semplice pagina di benvenuto con un'immagine introduttiva e una navigazione di base.
 - **Pagina delle destinazioni**: Elenco delle destinazioni di viaggio visitate, facilmente estendibile.
